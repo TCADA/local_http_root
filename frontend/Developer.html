@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head> 
+        
+        <meta http-equiv = "Content-Type" content = "text/html; charset=utf-8">
+        <title>Developer</title>
+
+        <script type = "text/JavaScript" src = "./Library.js">  </script>
+
+    </head>
+
+    <body style = "background-color:#546E7A">
+        <script type ="text/JavaScript" src = "./Developer.js"></script>
+        <script type = "text/JavaScript">
+
+            header = initHeader(title = new Title());
+            hotspot = header.nextHotspot(ctrl = new HotSpot, height = 80);
+ 
+            console.log("google");
+
+            googleAPI  = hotspot.nextTitle(ctrl = new GoogleHeader());
+            googleDoc = googleAPI.nextBody(ctrl = [new GoogleDoc1(), new GoogleDoc2()], height = 150);
+
+            hwAPI = googleDoc.nextTitle(ctrl = new HWHeader());
+            hwDoc = hwAPI.nextBody(ctrl = [new HWDoc()], height = 180);
+
+            xcAPI = hwDoc.nextTitle(ctrl = new XCHeader());
+            xcDoc = xcAPI.nextBody(ctrl = [new XCDoc1(), new XCDoc2()], height = 230);
+
+            jsAPI = xcDoc.nextTitle(ctrl = new JSHeader());
+            jsDoc = jsAPI.nextBody(ctrl = [new JSDoc1(), new JSDoc2(), new JSDoc3, new JSDoc4()], height = 460);
+
+            ajaxAPI = jsDoc.nextTitle(ctrl = new AJAXHeader());
+            ajaxDoc = ajaxAPI.nextBody(ctrl = [new AJAXDoc1(), new AJAXDoc2(), new AJAXDoc3], height = 220);
+
+            vscAPI = ajaxDoc.nextTitle(ctrl = new VSCHeader());
+            vscDoc = vscAPI.nextBody(ctrl = [new VSCDoc1(), new VSCDoc2()], height = 300);
+
+            studyAPI = vscDoc.nextTitle( ctrl = new StudyHeader());
+            studyDoc = studyAPI.nextBody(ctrl = [new StudyOther(), new StudyProgram(), new StudyAI()], height = 270);
+
+
+    </script> 
+
+    </body>
+</html>

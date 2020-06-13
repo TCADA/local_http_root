@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Mathematics</title>
+        <script type = "text/JavaScript" src = "./Library.js">  </script>
+
+    </head>
+
+    <body style = "background-color:#546E7A">
+        <script type = "text/JavaScript" src = "./Math.js">  </script>
+        <script type = "text/JavaScript">
+        
+            header = initHeader(title = new Title());
+
+            smartDragon = header.nextTitle(ctrl = new SmartDragonHeader());
+            sdData = smartDragon.nextBody(ctrl = [new SmartDragon1(), new SmartDragon2()], height = 180);
+            
+            apmo = sdData.nextTitle(ctrl = new APMOHeader());
+            apmoData = apmo.nextBody(ctrl = [new APMO1(), new APMO2(), new APMO3(), new APMO4()], height = 250);
+
+            apsmo = apmoData.nextTitle(ctrl = new APSMOHeader());
+            apsmoData = apsmo.nextBody(ctrl = [new APSMO()], height = 80);
+
+            amt = apsmoData.nextTitle(ctrl = new AMTHeader());
+            amcPrimary = amt.nextBody(ctrl = [new AMCMP(), new AMCUP()], height = 460);
+            amcSenior  = amcPrimary.nextBody(ctrl = [new AMCJunior(), new AMCIM(), new AMCSenior()], height = 200);
+            amtMCYA    = amcSenior.nextBody(ctrl = [new MCYAUP(), new MCYAJunior()], height = 120);
+            amtEnrichment = amtMCYA.nextBody(ctrl = [new Remanujan(), new Newton(), new Dirichlet()], height = 170);
+
+            ukmt = amtEnrichment.nextTitle(ctrl = new UKMTHeader());
+            ukmtJunior = ukmt.nextBody(ctrl = [new UKMTJMC(), new UKMTJMK(), new UKMTJMO()], height = 300);
+            ukmtIM = ukmtJunior.nextBody(ctrl = [new UKMTIMC(), new UKMTIMKG(), new UKMTIMKP()], height = 340);
+            ukmtIMO = ukmtIM.nextBody(ctrl = [new UKMTIMOC(), new UKMTIMOH(), new UKMTIMOM()], height = 190);
+            ukmtS   = ukmtIMO.nextBody(ctrl = [new UKMTSC(), new UKMTSG(), new UKMTSK()], height = 300);
+            ukmtSO  = ukmtS.nextBody(ctrl = [new UKMTSO1(), new UKMTSO2()], height = 570);
+            ukmtT  = ukmtSO.nextBody(ctrl = [new UKMTTCN(), new UKMTTCR(), new UKMTTS()], height = 220);
+
+            cat = ukmtT.nextTitle(ctrl = new CATHeader());
+            catData = cat.nextBody(ctrl = [new CATUP(), new CATJunior(), new CATIM(), new CATSenior()], height = 170);
+
+            cambridge7 = catData.nextTitle(ctrl = new Cambridge7());
+            cambridge7Data = cambridge7.nextBody(ctrl = [new Cambridge7Question(), new Cambridge7Answer()], height = 370);
+            
+            cambridge8 = cambridge7Data.nextTitle(ctrl = new Cambridge8());
+            cambridge8Data = cambridge8.nextBody(ctrl = [new Cambridge8Question(), new Cambridge8Answer()], height = 340);
+            
+            ees9 = cambridge8Data.nextTitle(ctrl = new EES9());
+            ees9Content = ees9.nextBody(ctrl = [new EES9Content1(), new EES9Content2(), new EES9Content3()], height = 180);
+            
+            im4 = ees9Content.nextTitle(ctrl = new IM4());
+            im4Data = im4.nextBody(ctrl = [new IM4Question(), new IM4Answer()], height = 460);
+         
+        </script>        
+
+
+    </body>
+</html>
+
+
